@@ -27,7 +27,8 @@ public class Note {
     private Paint paint = new Paint(Color.BLACK);
     private final float ADD_BUTTON_HEIGHT = 216;
     private int screenWidth, screenHeight;
-
+private int id;
+    private String title;
     public Note (Context context) {
         bitmap = BitmapFactory.decodeResource(context.getResources(), R.mipmap.note);
 
@@ -49,7 +50,39 @@ public class Note {
         y = smallestHeight + (float) (Math.random() * ((largestHeight - smallestHeight) + 1));
         isDeleted = false;
     }
+    //constructor to use in cloud
+    public Note (float x, float y, String title, int id){
+        this.id = id;
+        this.x = x;
+        this.y = y;
+        this.title = title;
+    }
+    public void setId(int id){
+        this.id = id;
 
+    }
+    public int getId(){
+        return this.id;
+    }
+public void setX(float x){
+    this.x=x;
+}
+    public float getX(){
+        return x;
+    }
+    public void setY(float y){
+        this.y = y;
+
+    }
+    public float getY(){
+        return y;
+    }
+    public void setTitle(String title){
+        this.title = title;
+    }
+    public String getTitle(){
+        return title;
+    }
     public void delete() {
         isDeleted = true;
     }

@@ -116,9 +116,11 @@ public class GameLoopView extends SurfaceView implements SurfaceHolder.Callback 
         if(event.getAction()== MotionEvent.ACTION_UP){
             upTouchX = event.getX();
             upTouchY = event.getY();
+
             wasTouched = false;
             noteArray.get(highestSelected).isSelected = false;
-
+//get last note, update the x and y location to send to the cloud
+noteArray.get(highestSelected).setX(upTouchX);
 
 
             if (upTouchX > deleteButton.x - deleteButton.width/2

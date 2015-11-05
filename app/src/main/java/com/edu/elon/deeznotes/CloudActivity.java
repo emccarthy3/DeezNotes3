@@ -38,11 +38,11 @@ public class CloudActivity extends Activity {
         setContentView(R.layout.activity_cloud);
 
         //user interface
-        x = (EditText) findViewById(R.id.x);
-        y = (EditText) findViewById(R.id.y);
-        note = (EditText) findViewById(R.id.note);
-        which = (EditText) findViewById(R.id.which);
-
+        //x = (EditText) findViewById(R.id.x);
+        //y = (EditText) findViewById(R.id.y);
+        //note = (EditText) findViewById(R.id.note);
+        //which = (EditText) findViewById(R.id.which);
+        //x =
         textView = (TextView) findViewById(R.id.textview);
     }
 

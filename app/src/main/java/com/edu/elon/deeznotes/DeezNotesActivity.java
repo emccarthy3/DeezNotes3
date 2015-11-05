@@ -37,6 +37,8 @@ public class DeezNotesActivity extends Activity {
     public void onClick(View view) {
         //showInputDialog();
         notes.notesArray.add(new Note(context));
+        // we need to add A NOTE TO THE CLOOUUUDDDD :D :( :,/ HOWDOWEDO
+
     }
 
     public void inputChecker(){

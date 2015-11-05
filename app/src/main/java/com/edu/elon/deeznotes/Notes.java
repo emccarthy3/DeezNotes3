@@ -9,6 +9,13 @@ public class Notes {
 
     ArrayList<Note> notesArray = new ArrayList<Note>();
 
+    public void addNote(Note note){
+        notesArray.add(note);
+    }
+    public ArrayList<Note> getNotesArray(){
+        return notesArray;
+    }
+
     //public Notes() {
 
         //loadNotesFromCloud();
